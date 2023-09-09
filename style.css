@@ -1,0 +1,148 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* resetting */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #f9fafb;
+  background: linear-gradient(to right, #4477ce, #35155d);
+  font-family: "Poppins", sans-serif;
+}
+
+/* project style */
+canvas {
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+}
+
+.button {
+  cursor: pointer;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  color: #f9fafb;
+  background-color: #35155d;
+  width: 8rem;
+  height: 3rem;
+}
+
+.button:active {
+  scale: 0.95;
+}
+
+.rules-button {
+  display: block;
+}
+
+.rules-button.show {
+  display: none;
+}
+
+.close-button {
+  display: none;
+}
+
+.close-button.show {
+  display: block;
+}
+
+.rules {
+  position: absolute;
+  top: 0;
+  left: -20rem;
+  width: 20rem;
+  min-height: 100vh;
+  background-color: #35155d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+  transition: 0.8s left ease-in-out;
+  z-index: 2;
+}
+
+.rules.show {
+  left: 0;
+}
+
+.game {
+  width: 800px;
+  height: 600px;
+  border-radius: 0.5rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  color: #000;
+  background-color: #f9fafb;
+}
+
+.game input {
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 0.5rem;
+  font-family: inherit;
+  font-size: 1.2rem;
+  background-color: #f9fafb;
+  text-align: center;
+  width: 20rem;
+}
+
+.game .diff-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.diff-container input {
+  display: none;
+}
+
+.diff-container input:checked + label {
+  background-color: #4477ce;
+}
+
+.diff-container label {
+  color: #f9fafb;
+  width: 6.4rem;
+  height: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: #35155d;
+  transition: 0.3s background-color;
+}
+
+.game button {
+  width: 20rem;
+  height: 3rem;
+  font-family: inherit;
+  border: none;
+  color: #f9fafb;
+  background-color: #35155d;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+

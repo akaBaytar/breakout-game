@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Breakout Game</title>
+  </head>
+  <body>
+    <h1 class="title">Breakout!</h1>
+    <div class="rules">
+      <h2 class="rules-title">How to Play</h2>
+      <p>1. Enter your username and choose your difficulty level.</p>
+      <p>2. Difficulty level adjusts your paddle width.</p>
+      <p>3. Use your left and right keys to move paddle.</p>
+      <p>4. Bounce the ball up and break the bricks.</p>
+      <p>5. If you miss the ball, your score and the bricks will reset.</p>
+      <p>6. You have 5 lives to win the game.</p>
+    </div>
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <div class="game">
+      <input type="text" id="username" placeholder="Enter your name" />
+      <div class="diff-container">
+        <input type="radio" name="diff" id="easy" />
+        <label for="easy">Easy</label>
+        <input type="radio" name="diff" id="medium" checked />
+        <label for="medium">Medium</label>
+        <input type="radio" name="diff" id="hard" />
+        <label for="hard">Hard</label>
+      </div>
+      <button id="start">Lets Breakout!</button>
+    </div>
+    <button class="button rules-button">Show Rules</button>
+    <button class="button close-button">Close Rules</button>
+    <script src="./script.js"></script>
+  </body>
+</html>
